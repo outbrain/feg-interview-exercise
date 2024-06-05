@@ -1,0 +1,36 @@
+:host {
+  background-color: var(--ob-c-blue17);
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  display: block;
+  color: var(--ob-c-gray80);
+  font-size: var(--ob-fs-large);
+  margin: 12px;
+  padding: 8px;
+  text-decoration: none;
+  border-radius: var(--ob-border-radius-internal);
+
+  &.active {
+    background-color: var(--ob-c-black00);
+    color: var(--ob-c-white00);
+
+    &:hover {
+      background-color: var(--ob-c-black00);
+    }
+  }
+
+  &:hover {
+    background-color: #ffffff26
+  }
+}
+
+app-icon {
+  width: 24px;
+  height: 24px;
+}

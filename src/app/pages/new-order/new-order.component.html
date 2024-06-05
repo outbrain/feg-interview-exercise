@@ -1,0 +1,18 @@
+<div class="ob-page">
+  <div class="ob-page-headline">
+    <div class="ob-page-header">Select you pizza</div>
+  </div>
+  <div class="new-order-main">
+    <app-ingredients-selection [form]="formGroup"></app-ingredients-selection>
+    <div class="">
+      <app-pizza-preview
+        class="ob-card ob-card-secondary"
+        [order]="formGroup.value"
+      ></app-pizza-preview>
+      <app-order-summary
+        class="ob-card ob-card-secondary"
+        [order]="formGroup.value"
+      ></app-order-summary>
+    </div>
+  </div>
+</div>

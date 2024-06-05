@@ -1,0 +1,18 @@
+:host {
+  display: grid;
+  align-items: center;
+}
+
+.new-order-main {
+  display: flex;
+  gap: 1em;
+}
+
+.new-order-action-buttons {
+  gap: 8px;
+}
+
+app-pizza-preview,
+app-order-summary {
+  display: block;
+}

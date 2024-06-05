@@ -1,0 +1,27 @@
+<div class="ob-text-section-heading">
+  <img
+    class="ingredient-icon"
+    [alt]="ingredient.value?.name + ' icon'"
+    [src]="'/assets/ingredients/' + ingredient.value?.name + '.png'"
+  />
+  {{ ingredient.value?.name }}
+</div>
+
+<div class="ob-btn-group">
+  <button
+    *ngFor="let part of parts"
+    [ngClass]="{
+    'ob-btn': true,
+    'ob-btn-icon': true,
+    'ob-btn-active': ingredient.value?.part === part,
+    }"
+    [class]="part"
+    (click)="select(part)"
+  >
+    <svg-icon
+      class="side-selection-icon"
+      [src]="iconsMap[part]"
+      [svgStyle]="{ 'width.px': 32, 'height.px': 32, fill: 'currentColor' }"
+    ></svg-icon>
+  </button>
+</div>

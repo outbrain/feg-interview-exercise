@@ -1,0 +1,33 @@
+<form [formGroup]="form">
+  <div class="ob-card ob-card-primary">
+    <div class="ob-card-headline">
+      <div class="ob-card-header">Select Your Sauce</div>
+    </div>
+
+    <app-ingredient
+      *ngFor="let ingredient of form.controls.sauce.controls"
+      class="ob-form-field"
+      [ingredient]="ingredient"
+    ></app-ingredient>
+
+    <div class="ob-card-headline">
+      <div class="ob-card-header">Select Your Cheese Amount</div>
+    </div>
+    <app-cheese
+      class="ob-form-field"
+      [ingredient]="form.controls.cheese"
+    ></app-cheese>
+  </div>
+
+  <div class="ob-card ob-card-primary">
+    <div class="ob-card-headline">
+      <div class="ob-card-header">Select Your Toppings</div>
+    </div>
+
+    <app-ingredient
+      *ngFor="let ingredient of form.controls.toppings.controls"
+      class="ob-form-field"
+      [ingredient]="ingredient"
+    ></app-ingredient>
+  </div>
+</form>

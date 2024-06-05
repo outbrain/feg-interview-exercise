@@ -1,0 +1,34 @@
+.side-selection-icon {
+  width: 32px;
+  height: 32px;
+}
+.ob-btn {
+  color: var(--ob-c-black00);
+}
+
+.ob-btn.ob-btn-active {
+  color: var(--ob-c-bluesteel90);
+}
+
+.ob-text-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ingredient-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.left svg {
+  transform: rotate(-180deg);
+}
+
+:host {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
