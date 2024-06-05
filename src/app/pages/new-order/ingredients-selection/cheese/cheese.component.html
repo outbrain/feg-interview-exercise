@@ -1,0 +1,22 @@
+<div class="ob-text-section-heading">
+  <img
+    class="ingredient-icon"
+    alt="cheese icon"
+    src="/assets/ingredients/Cheese.png"
+  />
+  Cheese amount
+</div>
+
+<div class="ob-btn-group">
+  <button
+    *ngFor="let amount of amounts"
+    [ngClass]="{
+    'ob-btn': true,
+    'ob-btn-icon': true,
+    'ob-btn-active': ingredient.value === amount,
+    }"
+    (click)="select(amount)"
+  >
+    {{ amount }}
+  </button>
+</div>

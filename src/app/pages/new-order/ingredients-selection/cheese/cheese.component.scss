@@ -1,0 +1,22 @@
+.side-selection-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.ob-text-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ingredient-icon {
+  width: 24px;
+  height: 24px;
+}
+
+:host {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}

@@ -1,0 +1,12 @@
+:host {
+  display: flex;
+  height: 1em;
+  width: 1em;
+  font-size: var(--ob-fs-large);
+}
+
+svg {
+  height: 100%;
+  width: 100%;
+  fill: currentColor;
+}
